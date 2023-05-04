@@ -1,4 +1,4 @@
-public class AsteriskLogger implements Logger{
+public class AsteriskLogger implements Logger {
 
   @Override
   public void Log(String string) {

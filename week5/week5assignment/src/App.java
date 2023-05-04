@@ -1,5 +1,7 @@
 public class App {
+
   public static void main(String[] args) {
+
     SpacedLogger spacedLogger = new SpacedLogger();
     AsteriskLogger logger = new AsteriskLogger();
 
