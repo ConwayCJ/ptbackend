@@ -41,7 +41,7 @@ public class Main {
 
       //b.	Use a loop to iterate through the array again and concatenate all the names together, separated by spaces, and print the result to the console.
 
-      String concatenatedName = "not empty ";
+      String concatenatedName = " ";
 
       for (int i = 0; i < names.length; i++) {
         concatenatedName += names[i] + " ";
