@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class App {
 
   public static void main(String[] args) {
@@ -20,17 +18,17 @@ public class App {
       player2.hand.add(deck.draw());
     }
 
-    /**
-     * Game logic:
-     * 1. Run 26 rounds
-     * 2. Get a card from player1's hand / player2's hand
-     * 3. Compare cards
-     * 4. Add a point to each player based on winner
-     * 5. Compare points at the end
+    /*
+      Game logic:
+      1. Run 26 rounds
+      2. Get a card from player1's hand / player2's hand
+      3. Compare cards
+      4. Add a point to each player based on winner
+      5. Compare points at the end
      */
 
     System.out.println("War!\n");
-    for (int i = 1; i <= 26; i++) {;
+    for (int i = 1; i <= 26; i++) {
       Card p1Card = player1.draw();
       Card p2Card = player2.draw();
 

@@ -6,7 +6,7 @@ public class Deck {
   List<Card> deck = new ArrayList<>();
 
   Deck () {
-    String[] suits = {"Hearts", "Diamonds", "Spades", "Clubs"};
+    String[] suits = {"Hearts ♥", "Diamonds ♦", "Spades ♣", "Clubs ♠"};
     String[] ranks = {"Ace", "Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Jack","Queen","King"};
     for (String suit: suits) {
       for (int i = 0; i < ranks.length; i++) {
@@ -26,7 +26,7 @@ public class Deck {
   void describe() {
   for (Card card: deck) {
       card.describe();
-    };
+    }
     }
 
 }

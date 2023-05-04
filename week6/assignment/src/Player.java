@@ -10,8 +10,7 @@ public List<Card> hand = new ArrayList<>();
   }
 
   public Card draw() {
-    Card card = this.hand.remove(0);
-    return card;
+    return this.hand.remove(0);
   }
 
   public void describeHand(){
