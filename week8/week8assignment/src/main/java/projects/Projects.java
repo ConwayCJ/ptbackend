@@ -7,5 +7,7 @@ public class Projects {
   public static void main(String[] args) {
     //test getting connection
     DbConnection.getConnection();
+
   }
+
 }

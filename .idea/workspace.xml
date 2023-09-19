@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15134a88-21aa-431e-a81f-bc5f4fc6db88" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/week6/assignment/src/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week6/assignment/src/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week5/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week5/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week5/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week5/week5assignment/out/production/week5assignment/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/week5/week5assignment/out/production/week5assignment/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week5/week5assignment/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/week5/week5assignment/src/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week5/week5assignment/src/AsteriskLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/week5/week5assignment/src/AsteriskLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,15 +25,20 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Coding/ptbackend/week6",
+    "last_opened_file_path": "C:/Coding/ptbackend/week7/week7assignmentmaven",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "advanced.settings",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Coding\ptbackend\week7" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
