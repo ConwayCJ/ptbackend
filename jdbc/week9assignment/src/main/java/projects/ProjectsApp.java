@@ -11,17 +11,17 @@ import java.util.Scanner;
 
 public class ProjectsApp {
   private ProjectService projectService = new ProjectService();
-
+  private Project currentProject;
   private List<String> operations = List.of(
       "1) Add a project.",
-      "2) Edit a project.",
-      "3) Delete a project.");
+      "2) List Projects.",
+      "3) Select a Project"
+  );
   private Scanner scanner = new Scanner(System.in);
 
   public static void main(String[] args) {
 
    new ProjectsApp().processUserSelections();
-
 
   }
 
@@ -37,6 +37,12 @@ public class ProjectsApp {
           case 1:
             createProject();
             break;
+          case 2:
+            listProjects();
+            break;
+          case 3:
+            selectProject();
+            break;
           default:
             System.out.println("\n" + selection + " is not a valid selection. Try again.");
             break;
@@ -47,6 +53,36 @@ public class ProjectsApp {
     }
 
     return null;
+  }
+
+  private void selectProject() {
+    listProjects();
+
+    Integer projectId = getIntInput("Enter project ID to select a project.");
+
+//    Unselect current project
+    currentProject = null;
+//    Set current project to selection
+    currentProject = projectService.fetchProjectById(projectId);
+
+    if (Objects.isNull(currentProject)) {
+      System.out.println("\nYou are not working with a project.");
+    } else {
+      System.out.println("\nYou are working with project: " + currentProject);
+    }
+  }
+
+  private void listProjects() {
+    List<Project> projects = projectService.fetchAllProjects();
+
+    System.out.println("\nProjects: ");
+    for (Project project : projects) {
+      System.out.println("     "
+              + project.getProjectId() + "_"
+
+              + project.getProjectName()
+          );
+    }
   }
 
   private boolean exitMenu() {
@@ -65,6 +101,12 @@ public class ProjectsApp {
   private void printOperations() {
     System.out.println("\nThese are the available selections. Press the Enter key to quit:");
     operations.forEach(operation -> System.out.println(" " + operation));
+
+    if (Objects.isNull(currentProject)) {
+      System.out.println("\nYou are not working with a project.");
+    } else {
+      System.out.println("\nYou are working with project: " + currentProject);
+    }
   }
 
   private Integer getIntInput (String prompt) {
